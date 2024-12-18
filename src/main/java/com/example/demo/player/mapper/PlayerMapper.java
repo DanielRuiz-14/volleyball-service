@@ -27,6 +27,7 @@ public class PlayerMapper {
 
   public PlayerDto mapFromPlayerEntityToPlayerDto(Player player) {
     return PlayerDto.builder()
+        .id(player.getId())
         .birthDate(player.getBirthDate())
         .block(player.getBlock())
         .firstName(player.getFirstName())
